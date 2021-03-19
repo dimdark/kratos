@@ -12,7 +12,7 @@ import (
 var flagconf string
 
 func init() {
-	flag.StringVar(&flagconf, "conf", "config.yaml", "config path, eg: -conf config.yaml")
+	flag.StringVar(&flagconf, "conf", "/Users/wangjiehong/program/sc/go/kratos/examples/config/config.yaml", "config path, eg: -conf config.yaml")
 }
 
 func main() {

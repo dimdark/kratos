@@ -30,6 +30,7 @@ func (p *Project) New(ctx context.Context, dir string) error {
 	if err := repo.CopyTo(ctx, to, p.Name, []string{".git", ".github"}); err != nil {
 		return err
 	}
+	// 修改cmd下server名称为projectName名称
 	os.Rename(
 		path.Join(to, "cmd", "server"),
 		path.Join(to, "cmd", p.Name),
